@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  m1: number;
+  m2: number;
+  m3: number;
+  result: number;
+
+  typesOfResult = ['Poor','Good','Excellent'];
+  currentDate = new Date();
+
+  sum(){
+    this.result = (this.m1 ? this.m1 : 0) + (this.m2 ? this.m2 : 0) + (this.m3 ? this.m3 : 0)
+  }
 }
+
+  
